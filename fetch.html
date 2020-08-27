@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <article></article>
+    <input type="button" value="fetch" onclick="
+    /*
+        fetch('index.html').then(function(response){
+        response.text().then(function(text){
+        document.querySelector('article').innerHTML = text;
+        })     
+       
+    })
+    */
+    // function fetchCallback(){
+    //        console.log('fetfch end');
+    //    }
+       fetchCallback = function(response){
+           console.log(response);
+           if(response.status == '404'){
+               alert('Not found');
+           }
+       }
+       fetch('index.html').then(fetchCallback);  
+       fetch('javascript').then(fetchCallback);
+    ">
+</body>
+
+</html>
