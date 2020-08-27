@@ -1,0 +1,30 @@
+#active {
+    color: red;
+}
+
+/* block level element : ~~~~~*/
+
+h1 {
+    color: hotpink;
+    text-decoration: underline;
+    font-size: xx-large;
+    text-align: center;
+
+    border-bottom: 1px solid gray;
+}
+
+a {
+    border-width: 1px;
+    border-color: black;
+    border-style: dotted;
+    margin: 5px;
+    width: 100px;
+}
+
+.saw {
+    color: gray;
+}
+
+.active {
+    color: red;
+}

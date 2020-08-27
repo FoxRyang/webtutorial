@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<body>
+    <h1>JavaScript</h1>
+    <input type="button" value="night" onclick="nightFunc.call(this)">
+    <input type="text" onchange="alert('changed')">
+    <input type="text" onkeydown="alert('key down')">
+    <script type="text/javascript">
+        function dayFunc() {
+            ChangeBody('white', 'black');
+            this.value = 'night';
+            this.onclick = function () { nightFunc.call(this) };
+        }
+        function nightFunc() {
+            ChangeBody('black', 'white');
+            this.value = 'day';
+            this.onclick = function () { dayFunc.call(this) };
+        }
+        function ChangeBody(a, b) {
+            var cBody = document.querySelector("body");
+            cBody.style.backgroundColor = a;
+            cBody.style.color = b;
+        }
+        document.write(`hello world`);
+    </script>
+    <h1>html</h1>
+    1+1
+</body>
+
+</html>
