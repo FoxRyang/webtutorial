@@ -25,12 +25,12 @@ function ChangeBody(a, b, c) {
     Body.setBackgroundColor(a);
     Links.setColor(c);
 }
-document.write(`hello world`);
+// document.write(`hello world`);
 
-var arrTexts = ["asdf", "asefasef", "your", "bad"];
-arrTexts.forEach(elem => {
-    document.write(`<a>${elem}<br></a>`);
-});
+// var arrTexts = ["asdf", "asefasef", "your", "bad"];
+// arrTexts.forEach(elem => {
+//     document.write(`<a>${elem}<br></a>`);
+// });
 
 
 const Body = {
